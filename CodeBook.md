@@ -14,7 +14,7 @@ Load packages if not already present
 *Data.table package is requried to run the script 
 *This script checks to make sure that the right packages are loaded in the UI and if not, loads it into the system
 
-Upload all file sto variables
+Upload all files to variables
 *This set of scripts loads all the individual files from the zip file
 *activity_labels are the descriptions of the the y_test and y_train
 *features are the headers for the x_test and x_train
