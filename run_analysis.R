@@ -44,3 +44,5 @@ tidy <- cbind(featuresdataspec, combined)
 
 #Tidy Set 2
 tidy_two <- colMeans(data.matrix(tidy[sapply(tidy, is.numeric)]))
+
+write.table(tidy_two,file = "dataset.txt", row.names = FALSE)
