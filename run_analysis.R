@@ -43,6 +43,6 @@ combined <- cbind(Mergeactivitydata,subjectdata)
 tidy <- cbind(featuresdataspec, combined)
 
 #Tidy Set 2
-tidy_two <- colMeans(data.matrix(tidy[sapply(tidy, is.numeric)]))
+tidy_two <- aggregate(tidy[,1:79], list(tidy$Label, tidy$Subject), mean)
 
-write.table(tidy_two,file = "dataset.txt", row.names = FALSE)
+write.table(tidy,file = "dataset.txt", row.names = FALSE)
